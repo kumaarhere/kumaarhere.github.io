@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+  <style>
+      body{
+        padding:25;
+      }
+      .title{
+        color: blue;
+        font-family: monospace;
+      }
+    </style>
+  </head
+  <body>
+      <h class="title"> @kumaarkandugula</h>
+      <p id="currentTime"></p>
+      <script>
+        function showTime() {
+
+	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+
+}
+     showTime();
+       setInterval(function () {
+	     showTime();}, 1000);
+      </script>
+  </body>
+</html>
