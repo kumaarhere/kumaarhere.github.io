@@ -5,7 +5,7 @@
   <head>
   <style>
       body{
-        padding:25;
+        padding:50px;
       }
       .title{
         color: blue;
@@ -14,14 +14,14 @@
     </style>
   </head
   <body>
-      <h class="title"> @kumaarkandugula</h>
+      <h class="title" align="center"> @kumaarkandugula</h>
       <p id="currentTime"></p>
       <script>
         function showTime() {
 
-	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+	       document.getElementById('currentTime').innerHTML = Date();
 
-}
+      }
      showTime();
        setInterval(function () {
 	     showTime();}, 1000);
